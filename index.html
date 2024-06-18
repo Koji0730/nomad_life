@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your favorite spots</title>
+    <link rel="stylesheet" href="./get_random_photo.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXfmxHI2P_icXXsrbLZXz6pfQfHN92vDM&libraries=places"></script>
+    <script src="./get_random_photo.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Do you like this place?</h2>
+        <div id="content">
+            <div id="photo-container">
+                <img id="photo" src="" alt="Random Photo">
+                <p id="location"></p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <br>
+        <div class="buttons">
+            <button id="like-btn">Like</button>
+            <button id="not-like-btn">Not Like</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#like {
+    background-color: #28a745;
+    color: white;
+}
+
+#not-like {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@keyframes swipe-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes swipe-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.swipe-right {
+    animation: swipe-right 0.5s forwards;
+}
+
+.swipe-left {
+    animation: swipe-left 0.5s forwards;
+}
+
+.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+
+
